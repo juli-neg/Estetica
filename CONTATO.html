@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuide da sua beleza</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/contato.css">
+
+</head>
+
+<body>
+
+    <div id="CONTEINER"> <!-- DIV PRINCIPAL QUE TERÁ AS OUTRAS DENTRO DELA -->
+
+        <div id="TOPO">
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> BELLA </a> </li>
+                    <li> <a href="servicos.html"> SERVIÇOS </a> </li>
+                    <li> <a href="contato.html"> CONTATO </a> </li>
+                </ul>
+             
+            
+            
+        </nav>
+        </div>
+
+        <DIV id="conteudo_formulario"> <!-- Div principal que terá as outras dentro dela -->
+            <form method="post" id="fContato" action="bella@bella.com.br">
+                <!-- metodo post envio dados  -->
+                <!-- metodo GET para pesquisa -->
+                <!-- outlook configurado com a conta da empresa -->
+
+
+                <fieldset id="Usuario"> <!-- conjunto de campos em bloco  -->
+                    <legend>Dados do Usuário</legend>
+
+                <label for="cNome"> Nome: </label> <br> <!-- Quebra de linha break -->
+                <input type="text" name="Nome" id="cNome" size="20" maxlength="20" placeholder="Digite seu nome aqui" autofocus required />
+                <!-- LABEL = rotulo que virá antes da caixa de preenchimento  -->
+                 <!-- INPUT - caixa que o usuário ´preencherá os dados -->
+
+
+
+                <p>
+                    <label for="cMail"> E-mail: </label> <br>
+                    <input type="email" name="Mail" id="Mail" size="30" maxlength="50"
+                    placeholder="Ex: exemplo@mail.com" required />        
+                </p>
+               
+
+                <p>
+                    <label for="cdataNasc"> Data de nascimento: </label> <br>
+                    <input type="date" name="Nasc" id="Nasc" />  
+                <!-- TYPE DATE pode não abrir o calendário caso o navegador não esteja atualizado -->       
+                </p>
+
+                <p>
+                    <label for="cRua"> Endereço: </label> <br>
+                    <input type="text" name="tRua" id="cRua" size="30" maxlength="50"
+                    placeholder="Rua, Av, travessa " required/>  
+                <!-- TYPE DATE pode não abrir o calendário caso o navegador não esteja atualizado -->       
+                </p>
+
+                <p>
+                    <label for="cMsg"> Mensagem: </label> <br>
+                    <textarea name="tMsg" id="tMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"> </textarea>
+                </p>
+                </fieldset>
+
+
+
+                <div >
+                    <input type="submit" name="Enviar" class="botoes"/>
+                </div>
+                <!-- chamei a classe do botao direto nele para não alterar toda a div -->
+                <!-- Type submit para botão e Name enviar texto que virá sobre o botao -->
+
+
+            </form>
+        
+
+
+        </DIV>
+
+
+
+        <footer>
+            Todos os direitos reservados - 2025
+        </footer>
+
+
+    </div>
+    
+</body>
+</html>

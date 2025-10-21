@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+input {
+    background-color: rgb(197, 190, 235);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1em;
+    border-radius: 10px; /*arredonda a borda*/
+    border-style: double;
+    border-color: rgb(58, 2, 53); /*cor da borda*/
+}
+
+#conteudo_formulario{ /*div que está meu formulário*/
+    width: 50%;
+    margin: auto; /*centralizado na tela*/
+    background-color: rgb(235, 238, 241);
+
+}
+
+label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+    color: rgb(115, 19, 211);
+}
+
+.botoes{
+    background-color: rgb(223, 194, 223);
+    color: rgb(253, 7, 138);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: rgb(54, 4, 4);
+    padding: 1%; /*espaço dentro do botão entre o texto e as bordas*/
+}
+
+#botoes{ /*aqui é a div que está o botão*/
+    text-align: center;
+}

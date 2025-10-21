@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+#CONTEINER{
+    background-color: rgb(254, 254, 254);
+    width: 90%;
+    height: auto; /*TAMANHO AUMENTA DE ACORDO COM O CONTEUDO*/
+    margin: auto; /*centralizar o container*/
+}
+
+#TOPO{
+    background-color: rgb(200, 226, 233);
+    width: 100%;
+    height: 50px;
+}
+
+#BANNER{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(253, 253, 253);
+}
+
+.bannerhover{
+    width: 100%;
+    height: 400px;
+    background-image: url(../Imagens/Prancheta\ 1.png); /* imagem inicial */
+    background-size: cover; /* ajusta o tamanho da imagem de fundo para garantir que ela cubra completamente o elemento, mesmo que isso signifique cortar partes da imagem*/
+    background-position: center;
+    transition: background-image 0.5s ease-in-out; 
+}
+
+.bannerhover:hover{
+    background-image: url(../Imagens/Prancheta\ 2.png); /*imagem ao passar imagem*/
+}
+#BANNERLATERAL{
+    display: block; /*virou um bloco para direcionar para o lado que quiser*/
+    float: left; /*flutuar para a esquerda*/
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 700px;
+    padding-top: 1%;
+}
+
+/* classe banner lateral */
+.tamanhoBannerLateral{
+    width: 100%;
+    height: 700px;
+
+}
+
+#TEXTO{
+    display: block;
+    float: right;
+    background-color: rgb(255, 255, 255);
+    width: 48%;
+    height: 700px;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+h1{
+    color: rgb(77, 2, 67);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color: blueviolet;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    text-align: justify;
+    line-height: 1.3; /* distanciamento entre linhas */
+    font-family: Century Gothic, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em; /*fonte responsiva*/
+}
+
+footer{
+    clear: both; /*para ficar na parte debaixo do conteiner*/
+    background-color: rgb(44, 42, 42);
+    width: 100%;
+    height: 50px;
+    color: antiquewhite;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 2%;
+}
+
+nav{/* formatando a parte navegável */
+
+    width: 100%;
+    height: 58%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+nav ul{ /*formatando a lista que está dentro do NAV*/
+    list-style: none; /*retirando as bolinhas da lista*/
+    margin: 0; 
+    padding: 0;
+    float: right; /*flutuando a lista para a direita*/
+}
+
+
+nav ul li{
+    float: left; /*a ordem de chegada dos botoes*/
+}
+
+
+nav ul li a{ /*propriedades do link*/
+    color: rgb(7, 8, 8);
+    text-decoration: none; /*none desativa o css*/
+    padding: 15px;
+    display: block; /*transformar em blocos para movimentar na pagina*/
+}
+
+
+
+nav ul li a:hover{ /*evento mouse em cima do link*/
+    background-color: rgb(233, 3, 145);
+    transition: all .5s; /*tempo de efeito da transicao*/
+    border-radius: 10px
+
+}
+
+
+
+/*CSS da página serviços */
+
+#card01{
+    display: block;
+    float: left;
+    width: 29.3%;
+    height: auto;
+    background-color: rgb(119, 0, 255);
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+}
+
+.procedimento1{
+    width: 100%;
+    height: 200px;
+}
+
+.procedimento2{
+    width: 98%;
+    height: 200px;
+}
+
+.procedimento3{
+    width: 98%;
+    height: 200px;
+}
+
+.procedimento4{
+    width: 100%;
+    height: 200px;
+}
+
+.procedimento5{
+    width: 100%;
+    height: 200px;
+}
+
+.procedimento6{
+    width: 97%;
+    height: 200px;
+}
+
+.zoom{
+    transition: transform 0.3s ease; /*Suavia o efeito*/
+}
+
+.zoom:hover{
+    transform: scale(1.2); /*Aumenta 20% */
+}
